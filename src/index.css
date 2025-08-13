@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-deepBlue text-gray-100 overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+
+  p, span, div, li, a {
+    @apply font-exo;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-deepBlue/30 backdrop-blur-md rounded-xl border border-neonTurquoise/20 shadow-lg;
+  }
+  
+  .neon-gradient {
+    @apply bg-gradient-to-r from-deepBlue to-neonTurquoise;
+  }
+  
+  .neon-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neonTurquoise to-blue-400;
+  }
+  
+  .neon-border {
+    @apply border border-neonTurquoise/50 shadow-[0_0_15px_rgba(0,245,160,0.5)];
+  }
+  
+  .cyber-button {
+    @apply relative bg-transparent px-6 py-3 font-orbitron font-semibold 
+           text-neonTurquoise border border-neonTurquoise rounded-md
+           hover:bg-neonTurquoise/10 transition-all duration-300
+           shadow-[0_0_10px_rgba(0,245,160,0.3)] hover:shadow-[0_0_20px_rgba(0,245,160,0.5)]
+           before:content-[''] before:absolute before:inset-0 before:border before:border-neonTurquoise/50
+           before:rounded-md before:scale-[1.05] before:opacity-0 hover:before:scale-[1.1]
+           hover:before:opacity-100 before:transition-all before:duration-300 overflow-hidden
+           after:content-[''] after:absolute after:w-[150%] after:h-full after:bg-neonTurquoise/20
+           after:left-[-150%] after:top-0 after:transform after:rotate-45 after:z-[1]
+           hover:after:left-[150%] after:transition-all after:duration-500;
+  }
+  
+  .data-flow {
+    @apply absolute h-px bg-gradient-to-r from-transparent via-neonTurquoise/70 to-transparent;
+    animation: flowAnimation 8s linear infinite;
+  }
+  
+  @keyframes flowAnimation {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Floating animation for service cards */
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+  
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Hologram effect */
+  .hologram-effect {
+    @apply relative;
+  }
+  
+  .hologram-effect::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-neonTurquoise/0 via-neonTurquoise/20 to-neonTurquoise/0;
+    background-size: 200% 100%;
+    animation: hologramScan 2s linear infinite;
+  }
+  
+  @keyframes hologramScan {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Module assembly animation */
+  .module-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .module-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Animation delay utility classes */
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+  
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+  
+  .delay-300 {
+    transition-delay: 300ms;
+  }
+  
+  .delay-400 {
+    transition-delay: 400ms;
+  }
+  
+  .delay-500 {
+    transition-delay: 500ms;
+  }
+}
