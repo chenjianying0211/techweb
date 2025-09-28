@@ -10,7 +10,7 @@ import ParticleBackground from './components/ParticleBackground';
 
 function App() {
   return (
-    <Router basename="/techweb">
+    <Router>
       <div className="relative min-h-screen bg-deepBlue text-gray-100 font-exo overflow-hidden">
         <ParticleBackground />
         <div className="relative z-10">

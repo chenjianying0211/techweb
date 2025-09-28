@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         title="IFWIM 奕福穎科技公司 - AI人工智慧解決方案專家"
         description="IFWIM 奕福穎科技公司提供專業的AI人工智慧解決方案，包括系統開發、對話機器人、CMS管理、客製化系統等服務。幫助您的企業實現數位轉型。"
         keywords="IFWIM, ifwim, 奕福穎科技公司, AI人工智慧, 系統開發, 對話機器人, 數位轉型"
-        canonical="https://chenjianying0211.github.io/techweb/"
+        canonical="http://quarterai.org/"
       />
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">

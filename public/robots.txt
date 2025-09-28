@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://chenjianying0211.github.io/techweb/sitemap.xml
+Sitemap: http://quarterai.org/sitemap.xml
 
 # 重要頁面
 Allow: /services
