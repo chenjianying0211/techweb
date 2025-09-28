@@ -29,7 +29,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         isExpanded ? 'md:col-span-2 md:row-span-2' : ''
       }`}
       style={{ 
-        animationDelay, 
         animation: isExpanded ? 'none' : 'float 6s ease-in-out infinite',
         animationDelay
       }}
