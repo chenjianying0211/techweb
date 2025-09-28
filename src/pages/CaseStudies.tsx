@@ -56,6 +56,10 @@ const caseStudies = [
 const categories = ['所有案例', '對話機器人', 'CMS管理', '客製化系統', '系統開發', '形象網站'];
 
 const CaseStudies: React.FC = () => {
+  const handleCall = () => {
+    window.location.href = 'tel:0988105413';
+  };
+  
   const [activeCategory, setActiveCategory] = useState('所有案例');
   
   const filteredCases = activeCategory === '所有案例' 
@@ -197,7 +201,7 @@ const CaseStudies: React.FC = () => {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             無論您的項目規模大小，我們都能提供最適合的解決方案，幫助您實現業務目標。
           </p>
-          <button className="cyber-button text-lg px-8 py-4">
+          <button onClick={handleCall} className="cyber-button text-lg px-8 py-4">
             預約免費諮詢
           </button>
         </div>

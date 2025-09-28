@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-300 mb-6">
               專注於提供尖端AI技術解決方案，幫助企業實現數位轉型並釋放數據的全部潛力。
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-neonTurquoise transition-colors">
                 <Github size={20} />
               </a>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-400 hover:text-neonTurquoise transition-colors">
                 <Twitter size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
           
           <div>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                 <Link to="#" className="text-gray-300 hover:text-neonTurquoise transition-colors">關於我們</Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-300 hover:text-neonTurquoise transition-colors">聯絡我們</Link>
+                <a href="tel:0988105413" className="text-gray-300 hover:text-neonTurquoise transition-colors">聯絡我們</a>
               </li>
             </ul>
           </div>
@@ -88,18 +88,18 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-orbitron font-semibold mb-6 neon-text">聯絡資訊</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-neonTurquoise flex-shrink-0 mt-1" />
                 <span className="text-gray-300">台北市信義區松高路89號101大樓55樓</span>
-              </li>
+              </li> */}
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-neonTurquoise flex-shrink-0" />
-                <span className="text-gray-300">+886 2 8888 8888</span>
+                <span className="text-gray-300">+886 988105413</span>
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <Mail size={20} className="text-neonTurquoise flex-shrink-0" />
                 <span className="text-gray-300">contact@techai.com.tw</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
