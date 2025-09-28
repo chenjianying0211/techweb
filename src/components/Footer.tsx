@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <Brain size={32} className="text-neonTurquoise" />
-              <span className="text-2xl font-orbitron font-bold neon-text">IFWIN-AI</span>
+              <span className="text-2xl font-orbitron font-bold neon-text">IFWIM</span>
             </div>
             <p className="text-gray-300 mb-6">
-              專注於提供尖端AI技術解決方案，幫助企業實現數位轉型並釋放數據的全部潛力。
+              IFWIM 奕福穎科技公司專注於提供尖端AI技術解決方案，幫助企業實現數位轉型並釋放數據的全部潛力。
             </p>
             {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-neonTurquoise transition-colors">
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700/50">
           <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 IFWIN. 版權所有.
+              © 2025 IFWIM 奕福穎科技公司. 版權所有.
             </p>
             <div className="flex gap-6">
               <Link to="#" className="text-gray-400 text-sm hover:text-neonTurquoise transition-colors">隱私政策</Link>
