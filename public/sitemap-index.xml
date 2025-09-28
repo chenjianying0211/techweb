@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- 主要網站地圖 -->
+  <sitemap>
+    <loc>http://quarterai.org/sitemap.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+  
+  <!-- 可以在此添加其他專用sitemap，例如：
+  <sitemap>
+    <loc>http://quarterai.org/sitemap-news.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://quarterai.org/sitemap-images.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+  -->
+  
+</sitemapindex>
