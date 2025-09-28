@@ -23,7 +23,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onNewMessage }) => {
     {
       id: '1',
       role: 'assistant',
-      content: '您好！我是TechAI的AI助理，很高興為您提供服務。您可以向我諮詢技術問題、專案報價或查詢相關案例。',
+      content: '您好！我是IfWinAI的AI助理，很高興為您提供服務。您可以向我諮詢技術問題、專案報價或查詢相關案例。',
       timestamp: new Date()
     }
   ]);

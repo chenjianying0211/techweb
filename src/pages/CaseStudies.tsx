@@ -158,17 +158,17 @@ const CaseStudies: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { 
-                quote: 'TechAI團隊不僅技術實力強，更能深入理解我們的業務需求，提供超越期待的解決方案。', 
+                quote: 'IFWINAI團隊不僅技術實力強，更能深入理解我們的業務需求，提供超越期待的解決方案。', 
                 author: '林總經理', 
                 company: '金融科技公司' 
               },
               { 
-                quote: '與TechAI合作是明智的選擇，他們打造的電商平台不僅視覺出眾，更帶來顯著的業績增長。', 
+                quote: '與IFWINAI合作是明智的選擇，他們打造的電商平台不僅視覺出眾，更帶來顯著的業績增長。', 
                 author: '王執行長', 
                 company: '電子商務集團' 
               },
               { 
-                quote: 'TechAI開發的AI客服系統極大地提升了我們的服務效率，客戶滿意度創歷史新高。', 
+                quote: 'IFWINAI開發的AI客服系統極大地提升了我們的服務效率，客戶滿意度創歷史新高。', 
                 author: '陳總監', 
                 company: '國際零售品牌' 
               }

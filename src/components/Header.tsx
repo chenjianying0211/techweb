@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <NavLink to="/" className="flex items-center gap-2">
           <Brain size={32} className="text-neonTurquoise" />
-          <span className="text-2xl font-orbitron font-bold neon-text">TechAI</span>
+          <span className="text-2xl font-orbitron font-bold neon-text">IFWIN</span>
         </NavLink>
         
         {/* Desktop Navigation */}
