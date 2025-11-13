@@ -8,23 +8,34 @@
     <meta name="description" content="Tech consulting and AI solutions" />
     <title>Tech Web</title>
     <script type="text/javascript">
-      // Redirect to index.html with the original path preserved
-      var pathSegmentsToKeep = 0;
+      // Redirect to index.html with special handling
       var l = window.location;
-      var newUrl =
-        l.protocol +
-        "//" +
-        l.hostname +
-        (l.port ? ":" + l.port : "") +
-        l.pathname
-          .split("/")
-          .slice(0, 1 + pathSegmentsToKeep)
-          .join("/") +
-        "/?p=/" +
-        l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/") +
-        (l.search ? "&" + l.search.slice(1) : "") +
-        l.hash;
-      window.location.replace(newUrl);
+      var pathname = l.pathname;
+
+      // 只有特定路徑才保留，其他都導回首頁
+      var allowedPaths = ["/demo", "/services", "/cases"];
+      var shouldPreservePath = allowedPaths.some(function (path) {
+        return pathname === path || pathname.startsWith(path + "/");
+      });
+
+      if (shouldPreservePath) {
+        // 保留路徑，讓 SPA 路由處理
+        var newUrl =
+          l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          "/?p=" +
+          pathname +
+          (l.search ? "&" + l.search.slice(1) : "") +
+          l.hash;
+        window.location.replace(newUrl);
+      } else {
+        // 其他情況直接導回首頁
+        window.location.replace(
+          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/"
+        );
+      }
     </script>
   </head>
   <body></body>
