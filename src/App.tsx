@@ -1,12 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import CaseStudies from './pages/CaseStudies';
-import AIChat from './pages/AIChat';
-import Footer from './components/Footer';
-import ParticleBackground from './components/ParticleBackground';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import CaseStudies from "./pages/CaseStudies";
+import Footer from "./components/Footer";
+import ParticleBackground from "./components/ParticleBackground";
+
+// 外部連結重定向組件
+function ExternalRedirect({ url }: { url: string }) {
+  useEffect(() => {
+    window.location.href = url;
+  }, [url]);
+
+  return null;
+}
 
 function App() {
   return (
@@ -20,7 +28,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/cases" element={<CaseStudies />} />
-              <Route path="/ai-chat" element={<AIChat />} />
+              <Route
+                path="/demo"
+                element={<ExternalRedirect url="https://lin.ee/AK9Lwdb" />}
+              />
             </Routes>
           </main>
           <Footer />
