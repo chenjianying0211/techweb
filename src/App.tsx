@@ -10,7 +10,8 @@ import ParticleBackground from "./components/ParticleBackground";
 // 外部連結重定向組件
 function ExternalRedirect({ url }: { url: string }) {
   useEffect(() => {
-    window.location.href = url;
+    // 立即跳轉
+    window.location.replace(url);
   }, [url]);
 
   return null;
