@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +13,7 @@
       var pathname = l.pathname;
 
       // 只有特定路徑才保留，其他都導回首頁
-      var allowedPaths = ["/demo", "/services", "/cases"];
+      var allowedPaths = ["/demo", "/services", "/cases", "/chatbot"];
       var shouldPreservePath = allowedPaths.some(function (path) {
         return pathname === path || pathname.startsWith(path + "/");
       });
@@ -33,7 +33,7 @@
       } else {
         // 其他情況直接導回首頁
         window.location.replace(
-          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/"
+          l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/",
         );
       }
     </script>
