@@ -30,6 +30,13 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/cases" element={<CaseStudies />} />
               <Route
+                path="/chatbot"
+                element={
+                  <ExternalRedirect url="https://line.me/ti/p/Srl2wl8iUY" />
+                }
+              />
+
+              <Route
                 path="/demo"
                 element={<ExternalRedirect url="https://lin.ee/AK9Lwdb" />}
               />
