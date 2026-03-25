@@ -1,4 +1,4 @@
-# 🚀 IFWIM 奕福穎科技公司官網
+# 🚀 IFWIN 奕福穎科技公司官網
 
 > **AI 人工智慧解決方案專家 | 系統開發 | 數位轉型**
 
@@ -22,7 +22,7 @@
 
 ## 🏢 專案簡介
 
-IFWIM 奕福穎科技公司官網是一個現代化的 AI 技術解決方案展示網站，專注於：
+IFWIN 奕福穎科技公司官網是一個現代化的 AI 技術解決方案展示網站，專注於：
 
 - 🤖 **AI 人工智慧解決方案**
 - 💻 **系統開發與整合**
@@ -181,7 +181,7 @@ npm run deploy
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "IFWIM 奕福穎科技公司",
+  "name": "IFWIN 奕福穎科技公司",
   "url": "http://quarterai.org/"
 }
 ```
@@ -391,7 +391,7 @@ node --version  # 需要 >= 18.0.0
 ## 📞 聯絡資訊
 
 ### 🏢 公司資訊
-- **公司名稱**: IFWIM 奕福穎科技公司
+- **公司名稱**: IFWIN 奕福穎科技公司
 - **官方網站**: [http://quarterai.org/](http://quarterai.org/)
 - **電話**: +886 988105413
 - **服務項目**: AI 人工智慧、系統開發、數位轉型
@@ -413,7 +413,7 @@ node --version  # 需要 >= 18.0.0
 
 **🎯 專業 AI 解決方案，助力企業數位轉型**
 
-Made with ❤️ by IFWIM 奕福穎科技公司
+Made with ❤️ by IFWIN 奕福穎科技公司
 
 [🌐 官網](http://quarterai.org/) • [📱 聯絡我們](tel:+886988105413) • [💼 服務項目](http://quarterai.org/services)
 

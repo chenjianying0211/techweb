@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * 自動生成網站 Sitemap
- * IFWIM 奕福穎科技公司
+ * IFWIN 奕福穎科技公司
  */
 
 import fs from 'fs';
@@ -21,7 +21,7 @@ const pages = [
     url: '/',
     changefreq: 'weekly',
     priority: '1.0',
-    description: 'IFWIM 奕福穎科技公司首頁 - AI人工智慧解決方案專家'
+    description: 'IFWIN 奕福穎科技公司首頁 - AI人工智慧解決方案專家'
   },
   {
     url: '/services',
@@ -69,13 +69,13 @@ function getCurrentDate() {
 // 生成 XML
 function generateSitemap() {
   const currentDate = getCurrentDate();
-  
+
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
 
-  <!-- IFWIM 奕福穎科技公司 - 自動生成於 ${currentDate} -->
+  <!-- IFWIN 奕福穎科技公司 - 自動生成於 ${currentDate} -->
 `;
 
   // 主要頁面
@@ -92,7 +92,7 @@ function generateSitemap() {
   });
 
   xml += `\n\n  <!-- 服務類別子頁面 -->`;
-  
+
   // 服務子類別
   serviceCategories.forEach(category => {
     xml += `
@@ -106,7 +106,7 @@ function generateSitemap() {
   });
 
   xml += `\n\n  <!-- 案例分類子頁面 -->`;
-  
+
   // 案例分類
   caseCategories.forEach(category => {
     xml += `

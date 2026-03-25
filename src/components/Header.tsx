@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         <NavLink to="/" className="flex items-center gap-2">
           <Brain size={32} className="text-neonTurquoise" />
           <span className="text-2xl font-orbitron font-bold neon-text">
-            IFWIM
+            IFWIN
           </span>
         </NavLink>
 

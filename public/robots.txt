@@ -10,6 +10,6 @@ Allow: /cases
 Allow: /ai-chat
 
 # 搜尋引擎優化
-# IFWIM 奕福穎科技公司
+# IFWIN 奕福穎科技公司
 # AI 人工智慧解決方案
 # 系統開發專家
